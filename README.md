@@ -5,7 +5,7 @@ This repository will contain LIS624 notes from Week 4 going forward. The reposit
 
 ## Week 4 02/08/2026 Repository Created
 
-###Goal: Create a Github repository, then link this repository to my Ubuntu VM
+### Goal: Create a Github repository, then link this repository to my Ubuntu VM
 ### Steps:
 1. Create repository
 2. Generate an SSH using the VM
