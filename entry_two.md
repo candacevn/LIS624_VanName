@@ -1,4 +1,4 @@
-#Upgrades, People, Upgrades!
+# Upgrades, People, Upgrades!
 
 This entry has instructions for how to check my VM for updates, and how to install them!
 
