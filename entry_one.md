@@ -1,4 +1,4 @@
-Entry One:
+#Entry One:
 
 This entry allows me to test making .md files then pushing changes to my GitHub repository.
 
@@ -11,3 +11,15 @@ The steps to do so are:
 - git add entry_x.md
 - git commit -m "commit message here"
 - git push origin main
+- git status (check this to make sure everything is in one branch! anything that is "ahead" needs to be pushed)
+
+#Note to self: Don't edit anything using the online interface. If you do:
+
+Steps:
+ - cd LIS624_VanName
+ - git pull origin main (If the system warns about divergent branches, merge!)
+ - git status
+ 
+ 
+ 
+ 
