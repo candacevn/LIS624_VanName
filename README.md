@@ -56,9 +56,8 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 6. (Optional) Download results
 ### Notes:
 * Refer to entry 4 for related notes on PQF and yaz commands
-* Week 6 texts for reference- [Managing Software (Step 1)](https://cseanburns.github.io/systems-librarianship/3b-managing-software.html).
-			      [Library Search (Steps 2-6](https://cseanburns.github.io/systems-librarianship/3c-library-search.html).
-			      
+* Week 6 texts for reference- [Managing Software (Step 1)](https://cseanburns.github.io/systems-librarianship/3b-managing-software.html), and [Library Search (Steps 2-6](https://cseanburns.github.io/systems-librarianship/3c-library-search.html).
+
 ## Week 7 03/01/2026 Apache Web Server
 
 ### Goal: Install Apache, then create a simple web page
@@ -77,7 +76,7 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 
 ## Week 8 03/08/2026 Installing and Configuring Server-side Programming Language PHP
 
-### Goal:
+### Goal: Download PHP, then convert the Apache server to PHP from HTML
 ### Steps:
 1. Install PHP
 2. Restart Apache
