@@ -16,7 +16,7 @@ Repository updates should follow the following structure:
 ### Feedback: (if applicable)
 * 
 
-Instructor-provided notes on documentation can be found under the Week 8 discussion post instructions and at: https://cseanburns.github.io/systems-librarianship/2d-documenting-git-github-markdown.html#documentation-best-practices
+Instructor-provided notes on documentation can be found under the Week 8 discussion post instructions and in the [textbook](https://cseanburns.github.io/systems-librarianship/2d-documenting-git-github-markdown.html#documentation-best-practices).
 
 ## Week 4 02/08/2026 Repository Created
 
@@ -28,7 +28,7 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 4. Configure github settings in VM
 5. Clone repo to VM
 ### Notes:
-* Week 4 text for reference- https://cseanburns.github.io/systems-librarianship/2d-documenting-git-github-markdown.html
+* Week 4 text for [reference](https://cseanburns.github.io/systems-librarianship/2d-documenting-git-github-markdown.html).
 * Need to continue using the flashcards in VM to improve my understanding of the commands
 ### Feedback:
 * Editted the README to align with assignment standards.
@@ -42,7 +42,7 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 3. Upload the file to the gcloud VM
 ### Notes:
 * Refer to entry 3 for related notes on regex and command line options.
-* Week 5 text for reference- https://cseanburns.github.io/systems-librarianship/3a-searching-with-grep.html
+* Week 5 text for [reference](https://cseanburns.github.io/systems-librarianship/3a-searching-with-grep.html).
 
 ## Week 6 02/22/2026 Searching with yazt
 
@@ -56,8 +56,8 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 6. (Optional) Download results
 ### Notes:
 * Refer to entry 4 for related notes on PQF and yaz commands
-* Week 6 texts for reference- Managing Software (Step 1): https://cseanburns.github.io/systems-librarianship/3b-managing-software.html
-			      Library Search (Steps 2-6): https://cseanburns.github.io/systems-librarianship/3c-library-search.html
+* Week 6 texts for reference- [Managing Software (Step 1)](https://cseanburns.github.io/systems-librarianship/3b-managing-software.html).
+			      [Library Search (Steps 2-6](https://cseanburns.github.io/systems-librarianship/3c-library-search.html).
 			      
 ## Week 7 03/01/2026 Apache Web Server
 
@@ -70,9 +70,9 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 5. View the Default page in a browser
 6. Navigate to the web page's document root
 7. Rename, create, and edit a new ```  index.html ``` file
-8. Check web page through w3m or browser
+8. Check web page through ``` w3m ``` or browser
 ### Notes:
-* Week 7 text for reference- https://cseanburns.github.io/systems-librarianship/4a-installing-the-apache-web-server.html
+* Week 7 text for [reference](https://cseanburns.github.io/systems-librarianship/4a-installing-the-apache-web-server.html).
 * Refer to entry 5 for more information about CSS and the web page creation process.
 
 ## Week 8 03/08/2026 Installing and Configuring Server-side Programming Language PHP
@@ -90,6 +90,6 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 9. Create and code the ``` index.php ``` file as a browser detector
 10. Use browser to check ``` index.php ``` is the default page
 ###Notes:
-* Week 8 text for reference- https://cseanburns.github.io/systems-librarianship/4b-installing-configuring-php.html
+* Week 8 text for [reference](https://cseanburns.github.io/systems-librarianship/4b-installing-configuring-php.html).
 * Refer to entry 6 for related notes on PHP and browser detectors.
 * From Week 8 discussion post: I need to reformat this README and other .md files to fit appropriate documentation style.
