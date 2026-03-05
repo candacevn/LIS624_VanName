@@ -44,7 +44,7 @@ If you want to check out the man page for yaz, enter ``` man yaz-client ``` . Th
 * For better readabiliy use the ``` JQ ``` command
 * Readable format command: ``` jq . recordname.json > recordname-formatted.json ```
 * Simple file scan command: ``` less recordname-formatted.json ```
-* Advanced file searches utilize MARC and JQ formats
+* Advanced file searches utilize MARC and JQ formats.
 
 ### XML
 * Format conversion command resembles json conversion: ``` yaz-marcdump -o marcxml recordname.marc > recordname.xml ```
@@ -54,3 +54,5 @@ If you want to check out the man page for yaz, enter ``` man yaz-client ``` . Th
 This entry was super long, so here is a quick summary for future-me and others interested in this repository:
 * yaz-client is a Z39.50 protocol information retrieval client
 * Z39.50 protocol is an important coomunications standard for information searching and retrieval.
+* I struggled with downloading results, which inspired me to take better notes from the textbook and pay more attention to the code I was writing.
+* I am not very comfortable using the ```JQ``` command, so I want to practice using this more.

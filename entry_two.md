@@ -1,6 +1,7 @@
 # Upgrades, People, Upgrades!
 
 This entry has instructions for how to check my VM for updates, and how to install them!
+Having these instructions somewhere easy to find makes installation and upgrades easier to reference, as this is something I check every time I boot up my VM.
 
 Steps:
 - ``` sudo apt update``` (this will fetch the newest version of the packages in the VM)

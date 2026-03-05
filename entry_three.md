@@ -24,3 +24,7 @@ Using the browser, there is a button at the top that allows you to upload a file
 * Entry types- begin with an ``` @ ```. To search for entry types, use ``` grep ^@ file.bib ```. 
 * Cite key follows the entry type, and begins with the author’s last name 
 * Tags and fields are followed by ``` = ```.
+
+## Takeaways
+* I learned how to use regular expressions and command line options to format searches in bib records.
+* I felt like this process was easier the more I looked into and noted the different regx and command line options.

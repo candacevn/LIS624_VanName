@@ -13,10 +13,10 @@ The steps to do so are:
 - ``` git push origin main ```
 - ``` git status ``` (check this to make sure everything is in one branch! anything that is "ahead" needs to be pushed)
 
-# Note to self: Don't edit anything using the online interface. If you do:
-
+## Note to self: Don't edit anything using the online interface.
+I had to learn the hard way (trial and error), so here are my notes in case this happens again:
 Steps:
- - ``` cd LIS624_VanName ```
+ - ``` cd LIS624_VanName ``` (move to the github repository's directory)
  - ``` git pull origin main ``` (If the system warns about divergent branches, merge!)
  - ``` git status ``` (Checking to make sure it went through!)
  
