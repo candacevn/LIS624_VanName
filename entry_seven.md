@@ -12,7 +12,7 @@ This entry will discuss the installation process for MySQL and how I configured 
 * to exit MySQL, use ``` \q ```
 
 ## Create a User Account
-* ``` mysql> create user 'opacuser'@'localhost' identified by 'XXXXXXXXX'; ``` where 'opacuser' is the username and 'XXXXXXXXX' indicates the password (changed per user).
+* ``` create user 'opacuser'@'localhost' identified by 'XXXXXXXXX'; ``` where 'opacuser' is the username and 'XXXXXXXXX' indicates the password (changed per user).
 * Log in using ``` mysql -u opacuser -p ```. When inputting the password, there will be no visual indication that the password is going through, but it will register all keystrokes.
 
 ## Edit the User Prompt
@@ -22,11 +22,12 @@ This entry will discuss the installation process for MySQL and how I configured 
 
 ## Practice Database Creation
 * The following will create the database, display the database, and allow a specified user to access the newly created database:
-``` mysql> create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
-mysql> show databases;
-mysql> grant all privileges on opacdb.* to 'opacuser'@'localhost'; ```
 
-* If we want to grant only a specific privelege, these are: Create, Drop, Delete, Insert, Select, Updae, and Grant Option.
+```  create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
+ show databases;
+ grant all privileges on opacdb.* to 'opacuser'@'localhost'; ```
+
+* If we want to grant only a specific privelege, they are: Create, Drop, Delete, Insert, Select, Updae, and Grant Option.
 
 ### Create a Table in a Database
 * Log in as a user. To view databases, use ``` show databases; ```. To view a specific database, ``` use database_name ```. In our case, we want to view the created database ```opacdb ```.
@@ -42,7 +43,7 @@ mysql> grant all privileges on opacdb.* to 'opacuser'@'localhost'; ```
 
 ### Add Records to a Database Table
 * Example for inserting data:
-``` mysql> insert into books (author, title, copyright) values
+``` insert into books (author, title, copyright) values
 ('Jennifer Egan', 'The Candy House', '2022'),
 ('Imbolo Mbue', 'How Beautiful We Were', '2021'),
 ('Lydia Millet', 'A Children\'s Bible', '2020'),
