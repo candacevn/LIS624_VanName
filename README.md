@@ -88,7 +88,29 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 8. Check configuration change using ``` apachectl configtest ```
 9. Create and code the ``` index.php ``` file as a browser detector
 10. Use browser to check ``` index.php ``` is the default page
-###Notes:
+### Notes:
 * Week 8 text for [reference](https://cseanburns.github.io/systems-librarianship/4b-installing-configuring-php.html).
 * Refer to entry 6 for related notes on PHP and browser detectors.
 * From Week 8 discussion post: I need to reformat this README and other .md files to fit appropriate documentation style.
+
+## Week 9 03/15/2026 Installing and Configuring PHP and MySQL
+
+### Goal: Install and set-up MySQL, then connect it to PHP and our Apache server to create a basic OPAC.
+### Steps:
+1. Install MySQL
+2. Configure MySQL for installation
+3. Create a user
+4. Create a practice database
+5. Log in as a user
+6. Create a table and records
+7. Test MySQL command prompts
+8. Install PHP support for MySQL
+9. Restart Apache
+10. Adjust permissions and ownerships to connect PHP and MySQL
+11. Create a file for log-in credentials
+12. Create OPAC basic file for the server
+13. Verify syntax for new files
+14. Browse the new OPAC file
+### Notes:
+* Week 9 text for [reference](https://cseanburns.github.io/systems-librarianship/4c-installing-configuring-mysql.html).
+* Refer to entry 7 for more details regarding installation, configuration, and running MySQL.
