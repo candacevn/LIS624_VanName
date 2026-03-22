@@ -23,9 +23,9 @@ This entry will discuss the installation process for MySQL and how I configured 
 ## Practice Database Creation
 * The following will create the database, display the database, and allow a specified user to access the newly created database:
 
-```  create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
+create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
  show databases;
- grant all privileges on opacdb.* to 'opacuser'@'localhost'; ```
+ grant all privileges on opacdb.* to 'opacuser'@'localhost';
 
 * If we want to grant only a specific privelege, they are: Create, Drop, Delete, Insert, Select, Updae, and Grant Option.
 
