@@ -1,4 +1,4 @@
-### LAMP Stack Setup
+## LAMP Stack Setup
 This Markdown file serves as documentation for my LAMP Server setup.
 
 ## Introduction
@@ -7,19 +7,19 @@ This Markdown file serves as documentation for my LAMP Server setup.
 ## Installation Steps
 This section will include installation steps for Apache, MySQL, and PHP.
 
-# Apache
+### Apache
 * First, we need to check that our VM is running the latest upgrades for all packages.
 * To do so, run ``` sudo apt update ``` then ``` sudo apt -y upgrade ```.
 * Once everything has been upgraded, use the following command to install Apache: ``` apt search apache2 | head ```.
 * Verify the file is the correct one for our purposes using ``` apt show apache2 ```.
 * Now, we can install the package using ``` sudo apt install apache2 ```.
 
-# MySQL
+### MySQL
 * To beginning, check the VM is running the latest upgrades for all packages.
 * Next, install MySQL using ``` sudo apt install mysql-server ```. If we want to check the specific version we are installing, use ``` apt policy mysql-server ```. After installing, we can check this again using ``` mysql --version ```.
 * The installation should have our server up and running. To check the server's status, use ``` systemctl status mysql ```. The installation will ask a series of questions for the initial set-up. For most questions, we will answer yes. For security, we will enter a lower setting for our testing purposes.
 
-# PHP
+### PHP
 * Use ``` apt show php libapache2-mod-php ``` to examine the package we are installing.
 * to install use ``` sudo apt install php libapache2-mod-php ``` and ``` sudo systemctl restart apache 2 ``` to restart the Apache2 program.
 * To check the version of PHP we have installed, use ``` php -v ```.
@@ -28,13 +28,13 @@ This section will include installation steps for Apache, MySQL, and PHP.
 ## Configuration
 This section will include specific configuration steps for Apache, MySQL, and PHP.
 
-# Apache
+### Apache
 This covers the configurations need to change the initial webpage from the Apache default to my own webpage.
 * First, navigate to the document root using ``` cd /var/www/html/ ```.
 * Then, we rename the original index using ``` sudo mv index.html index.original.html ```.
 * Lastly, we edit the file using tilde ``` sudo tilde index.html ```
 
-# MySQL
+### MySQL
 These changes were necessary to link MySQL and PHP:
 * First, we need to change some ownership and permissions:
 * ``` cd /var/www ```
@@ -57,7 +57,7 @@ These changes were necessary to link MySQL and PHP:
 * test the file's syntax to ensure they are working properly: ``` sudo php -f /var/www/login.php ``` and ``` sudo php -f /var/www/html/opac.php ```.
 * Use a web-based browser to view the server, inserting the opac.php file name after the external IP.
 
-# PHP
+### PHP
 These configurations allowed the Apache server to serve .php files.
 * Navigate to ``` cd /etc/apache2/mods-available/ ```
 * Create a backup of the configuration file, using ``` cd cp dir.conf dir.conf.bak ```
@@ -70,16 +70,16 @@ These configurations allowed the Apache server to serve .php files.
 ## Verification
 This section will discuss verification methods for each component.
 
-# Apache
+### Apache
 * To verify that the webpage is displaying your changes, use either a graphical browser or a text-based browser.
 * Use w3m to browse graphically. Install it using ``` sudo apt install w3m ```. Then, navigate to the website using ``` w3m localhost ```.
 * To use a graphical browser, locate the server's external IP in Google Cloud Console, then click on it to launch the webpage.
 
-# MySQL
+### MySQL
 * To ensure our configurations have properly paired PHP and MySQL, check the file's syntax using ``` sudo php -f /var/www/login.php ``` and ``` sudo php -f /var/www/html/opac.php ```.
 * Then, use a web-based browser to view the server, inserting the opac.php file name after the external IP. This should display our desired page.
 
-# PHP
+### PHP
 * To check our changes made to connect PHP to the Apache server, use ``` apachectl configtest ``` to display configtest commands
 * Mainly, we want to check the config file's syntax, so use ``` apachectl -t ```, which should display ``` Syntax Ok ``` if everything was done correctly.
 * Lastly, we want to reload Apache and check it's status using ``` sudo systemctl reload apache2 ``` and ``` systemctl status apache2 ```.
