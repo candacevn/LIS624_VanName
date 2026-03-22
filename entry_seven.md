@@ -23,31 +23,31 @@ This entry will discuss the installation process for MySQL and how I configured 
 ## Practice Database Creation
 * The following will create the database, display the database, and allow a specified user to access the newly created database:
 
-create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
+* ``` create database opacdb default character set utf8mb4 collate utf8mb4_0900_ai_ci;
  show databases;
- grant all privileges on opacdb.* to 'opacuser'@'localhost';
+ grant all privileges on opacdb.* to 'opacuser'@'localhost'; ```
 
 * If we want to grant only a specific privelege, they are: Create, Drop, Delete, Insert, Select, Updae, and Grant Option.
 
 ### Create a Table in a Database
 * Log in as a user. To view databases, use ``` show databases; ```. To view a specific database, ``` use database_name ```. In our case, we want to view the created database ```opacdb ```.
 * This database is empty because we just created it. Let's create a table using the following command line prompts:
-``` create table books (
+* ``` create table books (
  id int unsigned not null auto_increment,
  author varchar(150) not null,
  title varchar(150) not null,
  copyright year not null,
  primary key (id)
-); ```
+ ); ```
 * View the table using ``` show tables ``` then ``` describe books ```.
 
 ### Add Records to a Database Table
 * Example for inserting data:
-``` insert into books (author, title, copyright) values
-('Jennifer Egan', 'The Candy House', '2022'),
-('Imbolo Mbue', 'How Beautiful We Were', '2021'),
-('Lydia Millet', 'A Children\'s Bible', '2020'),
-('Julia Phillips', 'Disappearing Earth', '2019'); ```
+* ``` insert into books (author, title, copyright) values
+ ('Jennifer Egan', 'The Candy House', '2022'),
+ ('Imbolo Mbue', 'How Beautiful We Were', '2021'),
+ ('Lydia Millet', 'A Children\'s Bible', '2020'),
+ ('Julia Phillips', 'Disappearing Earth', '2019'); ```
 Notice that the format is ``` insert into table_name (value1, value2, value3) values ``` then all data entries are in parenthesis and follow the same fomat as the values to tell the machine where to fit the correct values in at.
 * We can view these records after creation using ``` select * from books; ```
 
@@ -72,22 +72,22 @@ sudo chown :www-data login.php
 ls -l login.php
 sudo tilde login.php ```
 * Edit login.php to include the following (filling in user/password where applicable):
-``` <?php // login.php
-$db_hostname = "localhost";
-$db_database = "opacdb";
-$db_username = "opacuser";
-$db_password = "XXXXXXXXX";
-?> ```
+* ``` <?php // login.php
+ $db_hostname = "localhost";
+ $db_database = "opacdb";
+ $db_username = "opacuser";
+ $db_password = "XXXXXXXXX";
+ ?> ```
 * Next, create a new file to create a basic OPAC page by navigating to the root and creating a file named opac.php.
 * Insert the following code:
-``` <!DOCTYPE html>
-<html lang="en">
-<head>
+* ``` <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySQL Server Example</title>
-</head>
-<body>
+ </head>
+ <body>
 
     <h1>A Basic OPAC</h1>
     <p>We can retrieve all the data from our database and book table using a couple of different queries.</p>
@@ -136,8 +136,8 @@ $db_password = "XXXXXXXXX";
     $conn->close();
     ?>
 
-</body>
-</html> ```
+ </body>
+ </html> ```
 * test the file's syntac to ensure they are working properly: ``` sudo php -f /var/www/login.php ``` and ``` sudo php -f /var/www/html/opac.php ```.
 * Use a web-based browser to view the server, inserting the opac.php file name after the external IP.
 
