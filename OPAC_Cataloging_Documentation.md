@@ -127,10 +127,12 @@ Security is an important configuration step to prevent unauthorized access.
 3. Move to the cataloging directory, then create a file for the access web request. Add the provided content to .htaccess.
 ``` cd /var/www/html/cataloging ```
 ``` sudo tilde .htaccess ```
-``` AuthType Basic
+``` 
+AuthType Basic
 AuthName "Authorization Required"
 AuthUserFile /etc/apache2/.htpasswd
-Require valid-user ```
+Require valid-user
+```
 
 4. Verify the configuration file, then restart the server and check it's status.
 ``` sudo apachectl configtest ```
