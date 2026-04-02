@@ -155,14 +155,20 @@ Search and retrieval in the OPAC are facilitated through the web-browser.
 One important detail is to limit permissions and ownership of the Apache2 server to the Linux server.
 
 1. Retrieve the  user's information using the following:
-``` grep "www-data" /etc/passwd
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin ```
+```
+grep "www-data" /etc/passwd
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+```
 
 2. Change the ownership of the Apache2 server's document root to the Linux server user
-``` sudo chown :www-data /var/www/html ```
+```
+sudo chown :www-data /var/www/html
+```
 
 3. Set the setgid bit of the document root. This ensures new files inherit these ownership rules.
-``` sudo find /var/www/html -type d -exec chmod g+s {} + ```
+```
+sudo find /var/www/html -type d -exec chmod g+s {} +
+```
 
 ## Using Documentation
 While exploring the relational database in MySQL, I referenced the MySQL Server reference documentation to research the functions and operators section and the stored objects section. These seemed to be related to the uses we have for MySQL, but I didn't really find anything applicable. It is still interesting to see the variety of functions and commands for this program, though, even though they are out of our scope.  
