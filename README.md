@@ -114,3 +114,46 @@ Instructor-provided notes on documentation can be found under the Week 8 discuss
 ### Notes:
 * Week 9 text for [reference](https://cseanburns.github.io/systems-librarianship/4c-installing-configuring-mysql.html).
 * Refer to entry 7 for more details regarding installation, configuration, and running MySQL.
+
+## Week 10 03/29/2026 Creating a Barebones OPAC and Cataloging Module
+
+### Goal: Gain familiarity with the MySQL database, then set up the necessary files for the OPAC and Cataloging module.
+### Steps:
+1. Create a database, DinnerDB, granting privileges to the opacuser.
+2. Log in as the opacuser, then create tables in DinnerDB, insert data, and explore querying!
+3. Learn how to revoke privileges when needed.
+4. Create an html search page for our OPAC, titled ``` mylibrary.html ```.
+5. Create a php file titled ``` search.php ``` to connect our database to the ``` my.library.html ``` page.
+6. Modify the books database, adding titles and the copyright column.
+7. Create a new directory for our cataloging module.
+8. Create the ``` index.html ``` file, which will display as our cataloging page.
+9. Create the ``` insert.php file ```, which connects our database to the cataloging page.
+10. Set the password and username to limit access to our cataloging page.
+11. Set up permissions and ownership for our server.
+12. Test our OPAC and Cataloging module, ensuring they function as intended.
+### Notes:
+* Week 10 text for [reference](https://cseanburns.github.io/systems-librarianship/p5-integrated-library-systems.html).
+* Refer to entry 8 for more notes!
+
+## Week 11 04/04/2026 Installing Wordpress
+
+### Goal: Install Wordpress, linking it to our MySQL database.
+### Steps:
+1. View the Wordpress documentation
+2. Check for updates and upgrade as needed.
+3. Verify our versions for mysql and php match wordpress's requirements.
+4. Install additional php modules
+5. Download the latest wordpress software into the server's documentation root.
+6. Install the unzip program to unzip the wordpress file.
+7. Create a wordpress user for MySQL
+8. Create a wordpress database
+9. Grant privileges to the wordpress user for the wordpress database.
+10. Rename the wp-config.php file, then configure it to our username, password, and database.
+11. Rename the wordpress directory, if desired.
+12. Run the install script through our external IP.
+13. Finish the installation, setting up a username and password for the wordpress users.
+### Notes:
+* Week 11 text for [reference](https://cseanburns.github.io/systems-librarianship/6a-install-wordpress.html).
+* Refer to entry 9 for more notes.
+
+
