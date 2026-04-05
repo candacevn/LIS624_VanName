@@ -1,4 +1,4 @@
-# Entry Five
+# Entry Eight
 This entry will cover the steps to set up our OPAC and Cataloging Module and explore the MySQL database.
 
 ## Introduction to Relational Databases
