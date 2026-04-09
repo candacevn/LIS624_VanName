@@ -40,11 +40,13 @@ Well, I start consulting the Omeka Classic forums and Stack Overflow. I tried th
 5. Uncomment ``` RewriteBase ``` and add our omeka root directory ``` /var/www/html/omeka ```
 6. Edit the apache2.conf file ``` sudo tilde /etc/apache2/apache2.conf ```
 7. Add the following 
-``` <Directory /var/www/html/omeka>
+```
+<Directory /var/www/html/omeka>
 	Options Indexes FollowsSymLInks
 	AllowOverride All
 	Require all granted
-</Directory> ```
+</Directory>
+```
 8. Check the error logs ``` sudo tilde /var/log/apache2/error.log ```
 The error logs showed this: "/var/www/html/omeka/.htaccess: SetEnv not allowed here".
 After seeing this, I was almost positive that the issue was with the server configuration, not the omeka installation.
