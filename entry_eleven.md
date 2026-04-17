@@ -1,4 +1,4 @@
-#Entry Eleven
+# Entry Eleven
 
 ## Koha Installation
 1. Set up VM instance- my instance had already been upgraded to a larger storage size previously, so I just added the network tages and created the firewall rules for staff and public access to the opac.
